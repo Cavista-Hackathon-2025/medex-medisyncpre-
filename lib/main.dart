@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
+import 'view/main_tabview/main_tabview.dart';
+import 'view/medication/medication_view.dart';
 import 'view/on_boarding/startup_view.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -36,7 +38,7 @@ class _MyAppState extends State<MyApp> {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         // useMaterial3: true,
       ),
-         home: const StartupView(),
+         home: const MainTabView(),
 
     );
   }

@@ -6,8 +6,8 @@ import '../../common_widget/tab_button.dart';
 import '../about/about_view.dart';
 
 import '../home/home_view.dart';
+import '../medication/medication_view.dart';
 import '../profile/profile_view.dart';
-import '../schedule/schedule_view.dart';
 
 class MainTabView extends StatefulWidget {
   const MainTabView({super.key});
@@ -86,7 +86,7 @@ class _MainTabViewState extends State<MainTabView> {
                     onTap: () {
                       if (selctTab != 0) {
                         selctTab = 0;
-                        selectPageView = const ScheduleView();
+                        selectPageView = const MedicationScheduleScreen();
                       }
                       if (mounted) {
                         setState(() {});
