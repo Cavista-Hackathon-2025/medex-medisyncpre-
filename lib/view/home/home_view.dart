@@ -3,6 +3,7 @@ import '../../common/color_extension.dart';
 import '../../common_widget/round_button.dart';
 import '../about/notification_view.dart';
 import '../drugmangement/drugmanagement_view.dart';
+import '../medication/medicarecords_view.dart';
 import 'record_view.dart';
 
 class HomeView extends StatefulWidget {
@@ -287,7 +288,14 @@ class _HomeViewState extends State<HomeView> {
 
       // Floating action button navigates to Drug Management Screen
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => MedicationRecordScreen(),
+            ),
+          );
+        },
         backgroundColor: TColor.primary,
         child: const Icon(Icons.medication_rounded),
       ),
